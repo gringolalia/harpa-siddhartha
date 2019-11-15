@@ -7,7 +7,7 @@ html
 		link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css')
 		link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css')
 		link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=News+Cycle|Material+Icons')
-		link(rel="stylesheet" href="/main.css")
+		link(rel="stylesheet" href="/assets/bulma/css/bulma.css")
 		style.
 			
 			body {
@@ -16,7 +16,7 @@ html
 				font-style: normal;
 			}
 			
-			h1, h2, h3, h4, h5, h6 {
+			h1, h2, h3, h4, h5, h6, p, .title, .subtitle {
 				font-family: 'News Cycle', sans-serif;
 				font-weight: 300 !important;
 				font-style: normal;
@@ -82,11 +82,11 @@ html
 							Lista Suspensa
 							
 						.navbar-dropdown
-							a.navbar-item.
+							a.navbar-item(href="#down").
 								
 								Sobre Nobres
 								
-							a.navbar-item.
+							a.navbar-item(href="pages/ti").
 								
 								Sobre Pobres
 								
@@ -96,7 +96,7 @@ html
 							hr.navbar-divider
 							a.navbar-item.
 								
-								Dúvidas?
+								Se Tiver Dúvidas
 								
 				.navbar-end
 					.navbar-item
