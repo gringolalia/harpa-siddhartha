@@ -4,8 +4,9 @@ html
 		meta(charset='utf-8')
 		meta(name='viewport' content='width=device-width,initial-scale=1')
 		title Siddhartha Harps on DARPA
-		link(rel="stylesheet" href="assets/bulma/css/bulma.css")
-		link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.css')
+		link(rel="stylesheet" href="./assets/bulma/css/bulma.css")
+		link(rel="stylesheet" href="./main.css")
+		link(rel="stylesheet" href="./node_modules/bulma-helpers/css/bulma-helpers.min.css")
 		link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css')
 		link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=News+Cycle|Material+Icons')
 
@@ -53,13 +54,16 @@ html
 			.material-icons.md-light { color: rgba(255, 255, 255, 1); }
 			.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
+			a:hover {
+				color: #111111;
+			}
 
 	body
 
 		nav.navbar.is-fixed-top(role='navigation' aria-label='main navigation')
 			.navbar-brand
 				a.navbar-item(href='/' target="_self")
-					//- img(src='assets/img/alchemy-sulphuric.svg' width='112'	)
+
 					i.fas.fa-sun.fa-3x
 					span(style="font-size: 22px;")
 						| &nbsp; Engenho Novo LLP
@@ -69,11 +73,11 @@ html
 					span(aria-hidden='true')
 			#navbarBasicExample.navbar-menu
 				.navbar-start
-					a.navbar-item.
+					a.navbar-item(href="do").
 						
 						Lares et Penates
 						
-					a.navbar-item.
+					a.navbar-item(href="re").
 						
 						In Principio
 						
@@ -83,22 +87,30 @@ html
 							Lista Suspensa
 							
 						.navbar-dropdown
-							a.navbar-item(href="#down").
+							a.navbar-item(href="f-flat").
 								
 								Sobre Nobres
 								
-							a.navbar-item(href="pages/ti").
+							a.navbar-item(href="a-flat").
 								
 								Sobre Pobres
 								
-							a.navbar-item.
+							a.navbar-item(href="b-flat").
 								Dos Desnobres
 								
 							hr.navbar-divider
-							a.navbar-item.
+							a.navbar-item(href="c-flat").
 								
-								Se Tiver Dúvidas
+								Bugigangas Somos Nós
+
+							a.navbar-item(href="d-flat").
 								
+								Quinquilharia Onze
+
+							a.navbar-item(href="e-flat").
+								
+								Engenhocas Dormihocas
+
 				.navbar-end
 					.navbar-item
 						.buttons
